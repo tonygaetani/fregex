@@ -8,21 +8,21 @@ The recursive version of the grid-generating algorithm is not mine, I ported it 
 
 The Cartesian coordinate system has four quadrants
 
-![](https://raw.githubusercontent.com/tonygaetani/fregex/Vk2ZUy5.png)
+![](https://raw.githubusercontent.com/tonygaetani/fregex/masterVk2ZUy5.png)
 
 We split each image into quadrants
 
-![](https://raw.githubusercontent.com/tonygaetani/fregex/B8gYt80.png)
+![](https://raw.githubusercontent.com/tonygaetani/fregex/masterB8gYt80.png)
 
 And each quadrant into four more quadrants
 
-![](https://raw.githubusercontent.com/tonygaetani/fregex/8l0bMOW.png)
+![](https://raw.githubusercontent.com/tonygaetani/fregex/master/8l0bMOW.png)
 
 And continue doing so until each quadrant is a pixel.
 
-![](https://raw.githubusercontent.com/tonygaetani/fregex/9V96KXx.png)
+![](https://raw.githubusercontent.com/tonygaetani/fregex/master9V96KXx.png)
 
 We mark each square that matches the RegExp `.*1.*`
 
-![](https://raw.githubusercontent.com/tonygaetani/fregex/obltWkk.png)
+![](https://raw.githubusercontent.com/tonygaetani/fregex/masterobltWkk.png)
 
