@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="fregex.js" ></script>
+	<script type="text/javascript" src="fregex.js"></script>
 	<style>
-		body {
-			width: 1000%;
+		div {
+			display: flex;
+			display: inline-block;
 		}
-    div {
-      display: flex;
-    }
-    span {
-      display: inline-block;
-      width: 5px;
-      height: 5px;
-    }
 		p {
 			margin: 0;
 		}
-    .n {
-      background-color: white;
-    }
-    .y {
-      background-color: black;
-    }
 	</style>
 </head>
 <body onload="init()">
 	<h1>Fractal Regex</h1>
 	<div>
-		<p>Regex: </p><input id="regex" value=".*(?:13|31)(.*)">
+		<p>Regex: </p><input id="regex" value="13|31">
 	</div>
 	<div>
-		<p>Grid size: 2<sup><span id="slider-value">6</span></sup></p>
-		<input id="slider" type="range" min="1" max="10" value="6" onchange="fregex()">
+		<p>Grid size: 2<sup><span id="slider-value">8</span></sup></p>
+		<input id="slider" type="range" min="1" max="12" value="8" onchange="fregex()">
 	</div>
-	<figure id="fregex"></figure>
+	<figure id="fregex">
+		<canvas id="fregex-canvas"></canvas>
+	</figure>
 </body>
 </html>
